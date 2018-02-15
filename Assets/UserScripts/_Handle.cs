@@ -10,7 +10,9 @@ public partial class Wit3D : MonoBehaviour {
 		var N = JSON.Parse (textToParse);
 		print ("SimpleJSON: " + N.ToString());
 
-		string intent = N["outcomes"] [0] ["intent"].Value.ToLower ();
+		// string intent = N["outcomes"] [0] ["intent"].Value.ToLower ();
+		string intent = N["entities"]["intent"][0]["value"].Value.ToLower ();
+		Debug.LogWarning (N["entities"]["intent"][0]["value"].Value.ToLower ());
 
 		// what function should I call?
 		switch (intent)

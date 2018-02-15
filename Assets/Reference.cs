@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.Networking;
+using UnityEngine.Networking;
 using System.Collections;
 using SimpleJSON;
 using System;
@@ -67,7 +67,8 @@ public class Reference : MonoBehaviour {
 
 			//Grab the most up-to-date JSON file
 			// url = "https://api.wit.ai/message?v=20160305&q=Put%20the%20box%20on%20the%20shelf";
-			token = "NJP2HHQXIUK3IGW53WXL65NRD74GGJ5B";
+			token = "NJP2HHQXIUK3IGW53WXL65NRD74GGJ5B"; //"NJP2HHQXIUK3IGW53WXL65NRD74GGJ5B";
+			//"2K772I2M42FBYZPFQG53RQJHLFJI3RC6"
 
 			//Start a coroutine called "WaitForRequest" with that WWW variable passed in as an argument
 			string witAiResponse = GetJSONText("Assets/sample.wav");
