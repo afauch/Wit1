@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 89cc923dc7c7b4f0b91a7df096c80b00
-timeCreated: 1459040294
+timeCreated: 1518635669
 licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - commandClip: {fileID: 8300000, guid: 25365b3a5f52a46baa5b8e09766ffeeb, type: 3}
+  - spawnPoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

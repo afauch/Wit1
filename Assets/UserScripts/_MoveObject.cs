@@ -13,11 +13,11 @@ public partial class Wit3D : MonoBehaviour {
 		var N = JSON.Parse (textToParse);
 
 		// Find the subject
-		string subjJson = N["outcomes"][0]["entities"]["subject"][0]["value"].Value.ToLower();
+		string subjJson = N["entities"]["subject"][0]["value"].Value.ToLower();
 		print ("Subject: " + subjJson);
 
 		// Find the destination
-		string destJson = N["outcomes"][0]["entities"]["destination"][0]["value"].Value.ToLower();
+		string destJson = N["entities"]["destination"][0]["value"].Value.ToLower();
 		print ("Destination: " + destJson);
 
 		// Find the objects
